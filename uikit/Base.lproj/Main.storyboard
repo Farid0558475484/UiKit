@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,38 +16,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlightedImage="square.and.arrow.up.on.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aFP-87-7ed">
-                                <rect key="frame" x="76" y="362" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <imageReference key="image" image="Без названия" symbolScale="small"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choise your cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdC-Ih-dtE">
+                                <rect key="frame" x="16" y="75" width="393" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="RCO-vM-8sL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OLx-fk-HFC">
+                                <rect key="frame" x="16" y="116" width="361" height="384"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="384" id="BfL-AO-Cz7"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kls-vx-af8">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <imageReference key="image" image="Без названия" symbolScale="small"/>
-                                <imageReference key="highlightedImage" image="square.and.arrow.up.on.square.fill" catalog="system" symbolScale="small"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="YHo-UR-8lz">
+                                <rect key="frame" x="16" y="116" width="361" height="384"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="384" id="FZ2-N0-4ZL"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kls-vx-af8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HgH-ve-zmn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kls-vx-af8" secondAttribute="bottom" id="LJk-7N-ZIW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kls-vx-af8" secondAttribute="trailing" id="MHo-Gs-sJj"/>
-                            <constraint firstItem="Kls-vx-af8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g4i-hN-ytk"/>
+                            <constraint firstItem="OLx-fk-HFC" firstAttribute="top" secondItem="UdC-Ih-dtE" secondAttribute="bottom" constant="16" id="JT6-cz-PGV"/>
+                            <constraint firstItem="OLx-fk-HFC" firstAttribute="top" secondItem="UdC-Ih-dtE" secondAttribute="bottom" constant="8" id="Oai-0G-tVD"/>
+                            <constraint firstItem="UdC-Ih-dtE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ov9-ea-KbD"/>
+                            <constraint firstItem="UdC-Ih-dtE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Vqx-3O-te5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OLx-fk-HFC" secondAttribute="trailing" constant="16" id="qtJ-Kb-ETf"/>
+                            <constraint firstAttribute="trailing" secondItem="UdC-Ih-dtE" secondAttribute="trailing" constant="-16" id="v1o-rW-Xxa"/>
+                            <constraint firstItem="OLx-fk-HFC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xoD-2t-Mt4"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Kls-vx-af8" id="V6o-GB-dp7"/>
+                        <outlet property="catImageView" destination="YHo-UR-8lz" id="YEE-nY-fE3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="5"/>
+            <point key="canvasLocation" x="101.5267175572519" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <resources>
-        <image name="square.and.arrow.up.on.square.fill" catalog="system" width="119" height="128"/>
-        <image name="Без названия" width="112.5" height="112.5"/>
+        <image name="2" width="406.66665649414062" height="459.66665649414062"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
