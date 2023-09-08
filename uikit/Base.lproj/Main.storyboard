@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SFo-zz-EhU">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -31,8 +31,8 @@
                                     <constraint firstAttribute="height" constant="384" id="BfL-AO-Cz7"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="YHo-UR-8lz">
-                                <rect key="frame" x="16" y="116" width="361" height="384"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="YHo-UR-8lz">
+                                <rect key="frame" x="16" y="124" width="361" height="384"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="384" id="FZ2-N0-4ZL"/>
                                 </constraints>
@@ -41,10 +41,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OLx-fk-HFC" firstAttribute="top" secondItem="UdC-Ih-dtE" secondAttribute="bottom" constant="16" id="JT6-cz-PGV"/>
-                            <constraint firstItem="OLx-fk-HFC" firstAttribute="top" secondItem="UdC-Ih-dtE" secondAttribute="bottom" constant="8" id="Oai-0G-tVD"/>
+                            <constraint firstItem="OLx-fk-HFC" firstAttribute="top" secondItem="UdC-Ih-dtE" secondAttribute="bottom" constant="8" id="BWA-A5-qg9"/>
+                            <constraint firstItem="YHo-UR-8lz" firstAttribute="top" secondItem="UdC-Ih-dtE" secondAttribute="bottom" constant="16" id="HW3-GI-mPe"/>
                             <constraint firstItem="UdC-Ih-dtE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ov9-ea-KbD"/>
                             <constraint firstItem="UdC-Ih-dtE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Vqx-3O-te5"/>
+                            <constraint firstItem="OLx-fk-HFC" firstAttribute="leading" secondItem="YHo-UR-8lz" secondAttribute="leading" id="ZhP-9q-ZBL"/>
+                            <constraint firstItem="OLx-fk-HFC" firstAttribute="trailing" secondItem="YHo-UR-8lz" secondAttribute="trailing" id="iDH-05-EnK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OLx-fk-HFC" secondAttribute="trailing" constant="16" id="qtJ-Kb-ETf"/>
                             <constraint firstAttribute="trailing" secondItem="UdC-Ih-dtE" secondAttribute="trailing" constant="-16" id="v1o-rW-Xxa"/>
                             <constraint firstItem="OLx-fk-HFC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xoD-2t-Mt4"/>
@@ -58,11 +60,95 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="4.9295774647887329"/>
         </scene>
+        <!--Slider View Controller-->
+        <scene sceneID="ol2-ai-gE3">
+            <objects>
+                <viewController storyboardIdentifier="SliderViewController" id="SFo-zz-EhU" customClass="SliderViewController" customModule="uikit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dJe-NI-FLz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="36" minimumValueImage="calendar.circle" catalog="system" maximumValueImage="calendar.circle.fill" translatesAutoresizingMaskIntoConstraints="NO" id="Se6-8l-WES">
+                                <rect key="frame" x="11" y="342" width="368" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf4-Nf-hJm">
+                                <rect key="frame" x="15" y="313" width="366" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="100" minimumValueImage="percent" catalog="system" maximumValueImage="percent" translatesAutoresizingMaskIntoConstraints="NO" id="wj4-W8-s9s">
+                                <rect key="frame" x="11" y="429" width="368" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdX-zX-B7M">
+                                <rect key="frame" x="15" y="400" width="366" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10000" minValue="0.0" maxValue="100000" minimumValueImage="calendar.circle" catalog="system" maximumValueImage="calendar.circle.fill" translatesAutoresizingMaskIntoConstraints="NO" id="uU5-4u-Bet">
+                                <rect key="frame" x="12" y="266" width="368" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="amountSliderAction:" destination="SFo-zz-EhU" eventType="valueChanged" id="brc-Zj-gpO"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHp-S7-aTu">
+                                <rect key="frame" x="16" y="237" width="366" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wER-g6-Jtb">
+                                <rect key="frame" x="16" y="133" width="361" height="23"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tlQ-oH-bp4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="JHp-S7-aTu" id="hTq-i3-jNS"/>
+                        <outlet property="amountSlider" destination="uU5-4u-Bet" id="O5C-tN-OAO"/>
+                        <outlet property="commonAmountLabel" destination="wER-g6-Jtb" id="hfM-Jp-YMj"/>
+                        <outlet property="percentLabel" destination="PdX-zX-B7M" id="yxz-Oc-vrB"/>
+                        <outlet property="percentSlider" destination="wj4-W8-s9s" id="FR8-CQ-Cd5"/>
+                        <outlet property="periodLabel" destination="uf4-Nf-hJm" id="yyE-So-I5Z"/>
+                        <outlet property="periodSlider" destination="Se6-8l-WES" id="XZO-KY-B28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DrB-cd-IuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183.969465648855" y="4.9295774647887329"/>
+        </scene>
     </scenes>
     <resources>
         <image name="2" width="406.66665649414062" height="459.66665649414062"/>
+        <image name="calendar.circle" catalog="system" width="128" height="123"/>
+        <image name="calendar.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="percent" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

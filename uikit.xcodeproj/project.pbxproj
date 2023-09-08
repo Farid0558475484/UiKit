@@ -14,6 +14,7 @@
 		3F3DC2B32AA1FA63000FB58B /* uikit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DC2B12AA1FA63000FB58B /* uikit.xcdatamodeld */; };
 		3F3DC2B52AA1FA65000FB58B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3DC2B42AA1FA65000FB58B /* Assets.xcassets */; };
 		3F3DC2B82AA1FA65000FB58B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3DC2B62AA1FA65000FB58B /* LaunchScreen.storyboard */; };
+		3FC760E02AAA41410008DFC4 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC760DF2AAA41410008DFC4 /* SliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3F3DC2B42AA1FA65000FB58B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3DC2B72AA1FA65000FB58B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3DC2B92AA1FA65000FB58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC760DF2AAA41410008DFC4 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3F3DC2A82AA1FA63000FB58B /* AppDelegate.swift */,
 				3F3DC2AA2AA1FA63000FB58B /* SceneDelegate.swift */,
 				3F3DC2AC2AA1FA63000FB58B /* ViewController.swift */,
+				3FC760DF2AAA41410008DFC4 /* SliderViewController.swift */,
 				3F3DC2AE2AA1FA63000FB58B /* Main.storyboard */,
 				3F3DC2B42AA1FA65000FB58B /* Assets.xcassets */,
 				3F3DC2B62AA1FA65000FB58B /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3DC2B32AA1FA63000FB58B /* uikit.xcdatamodeld in Sources */,
+				3FC760E02AAA41410008DFC4 /* SliderViewController.swift in Sources */,
 				3F3DC2AD2AA1FA63000FB58B /* ViewController.swift in Sources */,
 				3F3DC2A92AA1FA63000FB58B /* AppDelegate.swift in Sources */,
 				3F3DC2AB2AA1FA63000FB58B /* SceneDelegate.swift in Sources */,
