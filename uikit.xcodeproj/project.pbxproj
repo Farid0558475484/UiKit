@@ -16,6 +16,7 @@
 		3F3DC2B82AA1FA65000FB58B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3DC2B62AA1FA65000FB58B /* LaunchScreen.storyboard */; };
 		3FA42D402AAEE31C00A2D613 /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA42D3F2AAEE31C00A2D613 /* StepperViewController.swift */; };
 		3FA42D422AAF0D7B00A2D613 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA42D412AAF0D7B00A2D613 /* TextFieldViewController.swift */; };
+		3FA42D442AAF339200A2D613 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA42D432AAF339200A2D613 /* TextViewViewController.swift */; };
 		3FC760E02AAA41410008DFC4 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC760DF2AAA41410008DFC4 /* SliderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		3F3DC2B92AA1FA65000FB58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA42D3F2AAEE31C00A2D613 /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
 		3FA42D412AAF0D7B00A2D613 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		3FA42D432AAF339200A2D613 /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
 		3FC760DF2AAA41410008DFC4 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 		3F3DC2A72AA1FA63000FB58B /* uikit */ = {
 			isa = PBXGroup;
 			children = (
+				3FA42D432AAF339200A2D613 /* TextViewViewController.swift */,
 				3FA42D412AAF0D7B00A2D613 /* TextFieldViewController.swift */,
 				3FA42D3F2AAEE31C00A2D613 /* StepperViewController.swift */,
 				3F3DC2A82AA1FA63000FB58B /* AppDelegate.swift */,
@@ -156,6 +159,7 @@
 				3FC760E02AAA41410008DFC4 /* SliderViewController.swift in Sources */,
 				3F3DC2AD2AA1FA63000FB58B /* ViewController.swift in Sources */,
 				3F3DC2A92AA1FA63000FB58B /* AppDelegate.swift in Sources */,
+				3FA42D442AAF339200A2D613 /* TextViewViewController.swift in Sources */,
 				3F3DC2AB2AA1FA63000FB58B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
